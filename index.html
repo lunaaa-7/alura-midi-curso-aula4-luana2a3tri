@@ -1,0 +1,53 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma do documento como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Define a compatibilidade com Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a escala inicial para dispositivos móveis -->
+
+    <title>Alura MIDI</title> <!-- Define o título da página exibido na aba do navegador -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Define o título da página exibido na aba do navegador -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Pré-conexão com o servidor de fontes do Google com permissão para crossorigin -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet"> <!-- Importa a fonte Montserrat do Google Fonts -->
+
+    <link rel="icon" type="image/png" href="images/bateria.png"> <!-- Define o ícone exibido na aba do navegador -->
+    <link rel="stylesheet" href="css/reset.css"> <!-- Importa o arquivo CSS de reset -->
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Importa o arquivo CSS de estilos personalizados -->
+
+</head>
+<body>
+
+    <h1>Top Musics</h1> <!-- Título principal da página -->
+
+    <section class="teclado"> <!-- Define uma seção chamada "teclado" para os botões -->
+        <button class="tecla tecla_kiko">music1</button> <!-- Botão "Pom" com classes de estilos -->
+        <button class="tecla tecla_clap">music2</button> <!-- Botão "Clap" com classes de estilos -->
+        <button class="tecla tecla_tim">music3</button> <!-- Botão "Tim" com classes de estilos -->
+
+        <button class="tecla tecla_puff">music4</button> <!-- Botão "Puff" com classes de estilos -->
+        <button class="tecla tecla_splash">music5</button> <!-- Botão "Splash" com classes de estilos -->
+        <button class="tecla tecla_toim">music6</button> <!-- Botão "Toim" com classes de estilos -->
+
+        <button class="tecla tecla_psh">music7</button> <!-- Botão "Psh" com classes de estilos -->
+        <button class="tecla tecla_tic">music8</button> <!-- Botão "Tic" com classes de estilos -->
+        <button class="tecla tecla_tom">music9</button> <!-- Botão "Tom" com classes de estilos -->
+    </section>
+
+    <!-- Definição de elementos de áudio para cada tecla -->
+    <audio src="sounds/INTERWORLD   METAMORPHOSI.mp3" id="som_tecla_kiko"></audio>
+    <audio src="sounds/Alice Deejay   Better Off Alone (Official Video.mp3" id="som_tecla_clap"></audio>
+    <audio src="sounds/dancin (speed up.mp3" id="som_tecla_tim"></audio>
+    <audio src="sounds/The Police   Every Breath You Take (Official Music Video.mp3" id="som_tecla_puff"></audio>
+    <audio src="sounds/Alan Walker   The Spectr.mp3" id="som_tecla_splash"></audio>
+    <audio src="sounds/Indila   Love Story (Lyrics.mp3" id="som_tecla_toim"></audio>
+    <audio src="sounds/Calvin Harris, Rihanna   This Is What You Came For (Lyrics[1].mp3" id="som_tecla_psh"></audio>
+    <audio src="sounds/Lady Gaga   Just Dance (Official Music Video) ft Colby.mp3" id="som_tecla_tic"></audio>
+    <audio src="sounds/Maroon 5   Girls Like You ft Cardi B (Official Music Video.mp3" id="som_tecla_tom"></audio>
+    
+
+    <!-- Importa o arquivo JavaScript "main.js" -->
+    <script src="main.js"></script>
+
+</body>
+</html>

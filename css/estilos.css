@@ -1,0 +1,75 @@
+:root {
+  /* Definição de variáveis de cores utilizando CSS custom properties */
+  --cinza: #aaa; /* Cinza */
+  --vermelha: #e93d50; /* Vermelho */
+  --vermelha-escura: #af303f; /* Vermelho escuro */
+  --branca: #fff; /* Branco */
+  --luz: rgb(229, 255, 0); /* Amarelo claro */
+}
+
+body {
+  /* Estilos para o corpo da página */
+  align-items: center; /* Alinhar itens ao centro */
+  background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%); /* Fundo gradiente linear */
+  display: flex; /* Exibir como flexível (elementos filhos seguem o eixo flexível) */
+  justify-content: center; /* Alinhar conteúdo ao centro no eixo principal */
+  flex-direction: column; /* Organizar itens em coluna */
+  font-family: 'Montserrat', sans-serif; /* Fonte utilizada para texto */
+  min-height: 100vh; /* Altura mínima de 100% da altura da tela visível */
+}
+
+h1 {
+  /* Estilos para cabeçalho h1 */
+  color: var(--branca); /* Cor do texto branca, usando variável */
+  margin-bottom: 20px; /* Margem inferior de 20 pixels */
+  font-size: 2rem; /* Tamanho da fonte de 2 rem */
+}
+
+.teclado {
+  /* Estilos para a seção com classe 'teclado' */
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* Fundo gradiente linear */
+  box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000; /* Sombra externa */
+  border-radius: 30px; /* Raio de borda de 30 pixels (bordas arredondadas) */
+  display: grid; /* Organizar em layout de grade */
+  gap: 10px; /* Espaçamento entre elementos (10 pixels) */
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+  padding: 10px; /* Preenchimento interno de 10 pixels */
+}
+
+.tecla {
+  /* Estilos para botões com classe 'tecla' */
+  background-color: var(--branca); /* Cor de fundo branca */
+  border-radius: 30px; /* Raio de borda de 30 pixels (bordas arredondadas) */
+  box-shadow: 3px 3px 0 var(--cinza); /* Sombra */
+  color: var(--vermelha); /* Cor do texto vermelha */
+  cursor: pointer; /* Cursor ao passar o mouse */
+  height: 120px; /* Altura de 120 pixels */
+  font-size: 1.75em; /* Tamanho da fonte de 1.75em */
+  font-weight: bold; /* Peso da fonte: negrito */
+  line-height: 120px; /* Altura da linha de 120 pixels */
+  text-align: center; /* Alinhamento do texto ao centro */
+  width: 120px; /* Largura de 120 pixels */
+}
+
+.tecla.ativa,
+.tecla:active {
+  /* Estilos para botões ativos ou clicados */
+  background-color: var(--vermelha); /* Cor de fundo vermelha */
+  border: 4px solid  var(--vermelha); /* Borda de 4 pixels sólida vermelha */
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset; /* Sombra interna vermelha escura */
+  color: var(--branca); /* Cor do texto branca */
+  outline: none; /* Sem contorno ao focar */
+}
+
+.tecla.focus,
+.tecla:focus {
+  /* Estilos para botões em foco */
+  outline: none; /* Sem contorno ao focar */
+  box-shadow: 1px 1px 10px var(--luz); /* Sombra leve ao focar */
+}
+
+.tecla.active:focus,
+.tecla:active:focus {
+  /* Estilos para botões ativos em foco */
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz); /* Sombra interna vermelha escura e sombra leve ao focar */
+}
